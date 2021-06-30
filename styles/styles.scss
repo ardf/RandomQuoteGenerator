@@ -1,0 +1,66 @@
+$main-color: #00c;
+$sec-color: #99f;
+$bg-color: #000;
+
+body
+{
+  background: $bg-color;
+}
+#header{
+  color: #fff;
+  display: block;
+  width:100%;
+  margin: 20px auto;
+  text-align: center;
+}
+#quote-box{
+  position:relative;
+  height: auto;
+  width: 500px;
+  max-width: 90%;
+  background: $sec-color;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  padding: 5px 10px;
+}
+#text{
+  color: $main-color;
+  font-weight: bold;
+  font-size:1.5rem;
+  font-style: italic;
+}
+#author{
+  color: $main-color;
+  position: absolute;
+  right: 10px;
+  float: right;
+  padding-right: 10px;
+  font-size: 1.2rem;
+  left: clear;
+}
+.button{
+  background: $main-color;
+  border-radius: 8px;
+  color: $sec-color;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border:none;
+  margin-top: 30px;
+  margin-right:20px;
+}
+.button:hover{
+  background:#000;
+}
+#tweet-quote{
+  text-decoration: none;
+  color: $sec-color;
+}
+footer{
+  color:#fff;
+  display: block;
+  width: 500px;
+  max-width:90%;
+  margin:20px auto;
+  text-align:right;
+}

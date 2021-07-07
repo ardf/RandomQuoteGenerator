@@ -2,6 +2,10 @@ body {
   background: #000;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 #header {
   color: #fff;
   display: block;
@@ -23,48 +27,64 @@ body {
 }
 
 #text {
-  color: #00c;
+  color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
   font-style: italic;
 }
 
 #author {
-  color: #00c;
-  position: absolute;
-  right: 10px;
-  float: right;
-  padding-right: 10px;
+  color: #fff;
   font-size: 1.2rem;
-  left: clear;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.buttons {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#tweet-quote a:visited,
+a {
+  text-decoration: none;
+  color: #99f;
 }
 
 .button {
-  background: #00c;
+  background: #fff;
   border-radius: 8px;
   color: #99f;
   font-size: 1.2rem;
   cursor: pointer;
   border: none;
-  margin-top: 30px;
+  padding: 5px 10px;
+  margin-top: 20px;
   margin-right: 20px;
 }
 
-.button:hover {
-  background: #000;
-}
-
-#tweet-quote {
-  text-decoration: none;
-  color: #99f;
+.button:hover,
+a:hover {
+  background: #99f;
+  color: #fff;
 }
 
 footer {
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   display: block;
-  width: 500px;
-  max-width: 90%;
-  margin: 20px auto;
-  text-align: right;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.content {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */

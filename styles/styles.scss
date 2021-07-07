@@ -1,20 +1,22 @@
-$main-color: #00c;
+$main-color: #fff;
 $sec-color: #99f;
 $bg-color: #000;
 
-body
-{
+body {
   background: $bg-color;
 }
-#header{
+.wrapper {
+  overflow-x: hidden;
+}
+#header {
   color: #fff;
   display: block;
-  width:100%;
+  width: 100%;
   margin: 20px auto;
   text-align: center;
 }
-#quote-box{
-  position:relative;
+#quote-box {
+  position: relative;
   height: auto;
   width: 500px;
   max-width: 90%;
@@ -24,43 +26,57 @@ body
   margin: 30px auto;
   padding: 5px 10px;
 }
-#text{
+#text {
   color: $main-color;
   font-weight: bold;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
-#author{
+#author {
   color: $main-color;
-  position: absolute;
-  right: 10px;
-  float: right;
-  padding-right: 10px;
   font-size: 1.2rem;
-  left: clear;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.button{
+.buttons {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+#tweet-quote a:visited,
+a {
+  text-decoration: none;
+  color: $sec-color;
+}
+.button {
   background: $main-color;
   border-radius: 8px;
   color: $sec-color;
   font-size: 1.2rem;
   cursor: pointer;
-  border:none;
-  margin-top: 30px;
-  margin-right:20px;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
-.button:hover{
-  background:#000;
+.button:hover,
+a:hover {
+  background: $sec-color;
+  color: $main-color;
 }
-#tweet-quote{
-  text-decoration: none;
-  color: $sec-color;
-}
-footer{
-  color:#fff;
+footer {
+  color: $bg-color;
+  background-color: $main-color;
   display: block;
-  width: 500px;
-  max-width:90%;
-  margin:20px auto;
-  text-align:right;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.content {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 0;
 }

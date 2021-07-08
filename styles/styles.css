@@ -85,6 +85,7 @@ footer {
   display: block;
   width: fit-content;
   margin: auto;
-  padding: 10px 0;
+  padding: 10px 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
